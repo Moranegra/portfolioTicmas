@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Web | Inicio </title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="https://kit.fontawesome.com/d2bf6a9195.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <h6 class="logo">Diseño Web<br><span>.Mora.</span></h6>
+                
+             <!--   <img src="***" alt="logo del producto" class="logo">-->
+                <ul id="menulateral">
+                    <li><a href="#header-text">Inicio</a></li>
+                    <li><a href="#acerca" onclick="closemenu()">Acerca de mi</a></li>
+                    <li><a href="#servicios" onclick="closemenu()">Servicios</a></li>
+                    <li><a href="#portfolio" onclick="closemenu()">Portfolio</a></li>
+                    <li><a href="#contacto" onclick="closemenu()">Contacto</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI|UX Diseñadora</p>
+                <h1>Hola, soy <span>Nerina</span><br>
+                    Morales</h1>
+
+            </div>
+        </div>
+    </header>
+    <section id="acerca">
+        <div class="container">
+            <div class="row">
+                <div class="acerca-col-1"><img src="imagen/RETRATO_4.jpg" alt="">
+                </div>
+                <div class="acerca-col-2">
+                    <h1 class="subtitulo">Acerca de mi</h1>
+                    <p>Programadora Full Stack. Desde hace dos años mas inclinada a la programación Front-End. Me
+                        desempeño como freelance y oriento mi trabajo al desarrollo de páginas web para diferentes tipos
+                        de clientes tanto nacionales como internacionales. Una parte importante de mi trabajo está
+                        centrado en la educación de las niñeces y su acercamiento a la programación de manera lúdica y
+                        entretenida </p>
+                    <div class="solapa-titulo">
+                        <p class="solapa-links link-activo" onclick="abrirsolapa('habilidades')">Habilidades</p>
+                        <p class="solapa-links" onclick="abrirsolapa('experiencia')">Experiencia</p>
+                        <p class="solapa-links" onclick="abrirsolapa('educacion')">Educación</p>
+                    </div>
+                    <div class="solapa-contenidos solapa-activa" id="habilidades">
+                        <ul>
+                            <li><span>UI|UX</span><br>Diseño Web/App</li>
+                            <li><span>Desarrollo Web</span><br>Desarrollo de Web Apps</li>
+                            <li><span>Desarrollo de Apps</span><br>Construcción de Apss Android/IOS</li>
+                        </ul>
+                    </div>
+                    <div class="solapa-contenidos" id="experiencia">
+                        <ul>
+                            <li><span>2022 - actualidad</span><br>Trabajo independiente de Diseño de páginas web</li>
+                            <li><span>2021</span><br>Profesora en Polo Tecnólogico Lanús</li>
+                            <li><span>2020 - actualidad</span><br>Programa "Programación para niñxs"</li>
+                        </ul>
+                    </div>
+                    <div class="solapa-contenidos" id="educacion">
+                        <ul>
+                            <li><span>2023</span><br>UI/UX UTN</li>
+                            <li><span>2022</span><br>Full Stack Python/Codo a codo</li>
+                            <li><span>2021</span><br>Argentina Programa</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </section>
+    <section id="servicios">
+        <div class="container">
+            <h1 class="subtitulo">Mis Servicios</h1>
+            <div class="lista-servicios">
+                <div>
+                    <i class="fa-solid fa-code-branch"></i>
+                    <h2>Diseño Web</h2>
+                    <p>El diseño web es una actividad que consiste en la planificación, diseño, implementación y mantenimiento de sitios web</p>
+                    <a href="#"> Leer más...</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>UI/UX Diseño</h2>
+                    <p>La combinación de ambas disciplinas para lograr el diseño de un producto o servicio que funcione y cumpla los objetivos con los que ha sido concebido: satisfacer la necesidad de un usuario</p>
+                    <a href="#"> Leer más...</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-network-wired"></i>
+                    <h2>Diseño de Apps</h2>
+                    <p><span>Web Apps.</span> Creación de herramientas a las que se accede a través de un servidor web.<br><span>Movil Apps.</span> Son aplicaciones que se usaran en dispositivos móviles, como smartphones o en tablets. </p>
+                    <a href="#"> Leer más...</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <h1 class="subtitulo">Mi Trabajo</h1>
+            <div class="lista-trabajos">
+                <div class="trabajos"> <img src="imagen/pisarlatierra.png" alt="">
+                    <div class="leyenda">
+                        <h3>Diseño sitio Web</h3>
+                        <p>Página web de agencia de turismo.Enteramente diseñada y desarrollada. Disponible para navegar
+                        </p>
+                        <a href="https://pisarlatierra.netlify.app/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="trabajos"> <img src="imagen/juegos.png" alt="">
+                    <div class="leyenda">
+                        <h3>Diseño sitio Web</h3>
+                        <p>Página web de juegos didácticos para lxs mas peques de la casa. Disponible para navegar y jugar
+                        </p>
+                        <a href="https://juegosdidacticos.netlify.app/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="trabajos"> <img src="imagen/pisarlatierra.png" alt="">
+                    <div class="leyenda">
+                        <h3>Diseño sitio Web</h3>
+                        <p>Página web de agencia de turismo.Enteramente diseñada y desarrollada. Disponible para navegar
+                        </p>
+                        <a href="https://pisarlatierra.netlify.app/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">Ver más</a>
+        </div>
+    </section>
+    <section id="contacto">
+        <div class="container">
+            <div class="row">
+                <div class="contacto-1">
+                    <h1 class="subtitulo">Contacto</h1>
+                    <p><i class="fa-solid fa-envelope"></i>neirmora@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i></i>+54 9 11 5929 7124</p>
+                    <div class="redes-sociales">
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""></a>
+
+                    </div>
+                    <a href="imagen/mi-CV.docx" class="btn btn2" download>Descargar CV</a>
+                </div>
+                <div class="contacto-2">
+                    <form id="form" class="form" action="https://formspree.io/f/mknagvvv" method="POST">
+                        <input type="text" name="nombre" placeholder="Ingrese su nombre" required>
+                        <input type="email" name="email" placeholder="Ingrese su email" requiered>
+                        <textarea name="mensaje" rows="10" placeholder="Escriba aquí su mensaje" required></textarea>
+                        <button type="submit" class="btn btn2">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer class="copyright">
+        Nerina Morales <i class="fa-regular fa-copyright"></i> copyright 2023
+        <h6 class="logo footer">Diseño Web<br><span>.Mora.</span></h6>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js">  </script>
+
+    <script src="acercademi.js"></script>
+    <script src="menu.js"></script>
+    <script src="formulariocontacto.js"></script>
+    
+</body>
+
+</html>
