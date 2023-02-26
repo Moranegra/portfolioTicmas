@@ -140,7 +140,7 @@ text-align: center;
 
 .solapa-titulo {
     display: flex;
-    margin: 20px 0 40px;
+    margin: 20px 0 25px;
     color: black;
 }
 
@@ -158,7 +158,7 @@ text-align: center;
     height: 3px;
     background: crimson; /*#ff004f;*/
     position: absolute;
-    left: 15px;
+    left: 25px;
     bottom: -8px;
     transition: 0.5s;
 }
