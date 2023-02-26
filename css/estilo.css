@@ -14,7 +14,6 @@ html{
 }
 
 body {
-    /*background: #080808;*/
     color: white;
 }
 
@@ -39,7 +38,7 @@ nav {
 }
 
 .logo {
-    width: 140px;
+    width: 100px;
     font-family: 'Alegreya';
     text-indent: 0.3rem;
 }
@@ -79,12 +78,12 @@ nav ul li a:hover::after {
 }
 
 .header-text {
-    margin-top: 20%;
+    margin-top: 30%;
     font-size: 30px;
 }
 
 .header-text h1 {
-    font-size: 60px;
+    font-size: 50px;
     margin-top: 20px;
     color: red;
 }
@@ -118,13 +117,15 @@ nav ul li a:hover::after {
     /*box-shadow: 2px 2px rgba(0, 0, 0, 0.9);*/
 }
 
+
+
 .acerca-col-2 {
     flex-basis: 60%;
 }
-/*.acerca-col-2 p {
-    margin: 25px 65px 25px 0;
+.acerca-col-2 p {
+    text-indent: 1.2rem;
     
-}*/
+}
 .subtitulo {
     font-size: 3rem;
     font-weight: 500;
@@ -163,7 +164,7 @@ text-align: center;
 }
 
 .solapa-links.link-activo::after {
-    width: 50%;
+    width: 70%;
 
 }
 
@@ -234,8 +235,117 @@ text-align: center;
 }
 
 .lista-servicios div:hover {
-    background-color: rgb(255, 115, 0);/* #ff004f;*/
+    background-color: rgb(255, 115, 0);
     transform: translateY(-16px);
+    cursor: pointer;
+}
+ .caja-producto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  padding: 0.6rem;
+    margin: 1.2rem;
+    gap: 10px;
+    width: auto;
+  
+}
+
+
+
+.lista-servicios .caja-producto .producto {
+    text-align: center;
+    padding: 1.8rem 1.2rem;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    outline: .5px solid #ccc;
+    outline-offset: -10px;
+    cursor: pointer;
+    
+}
+
+.lista-servicios .caja-producto .producto:hover {
+    outline: .5px solid #222;
+    outline-offset: 0;
+}
+
+.caja-producto .producto img {
+    height: 150px;
+    width: 300px;
+}
+
+.lista-servicios .caja-producto .producto:hover img {
+    transform: scale(.92);
+}
+
+.lista-servicios .caja-producto .producto h3 {
+    padding: .1.8rem 0;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 500;
+
+}
+
+.previa-producto {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, .8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+
+}
+
+.previa-producto .previa {
+    display: none;
+    padding: 1.8rem;
+    text-align: center;
+    background: whitesmoke;
+    position: absolute;
+    margin: 1.8rem;
+    width: 31.25rem;
+    height: 34.25rem;
+    outline: 10px solid crimson;
+    outline-offset: -10px;
+}
+
+.previa-producto .previa.active {
+    display: block;
+}
+
+.previa-producto .previa img {
+    width: 26rem;
+    height: 12.5rem;
+}
+
+.previa-producto .previa .fa-xmark {
+    position: absolute;
+    top: 0.8rem;
+    right: 1rem;
+    cursor: pointer;
+    color: #444;
+    font-size: 1.7rem;
+}
+
+
+.previa-producto .previa h3 {
+    color: black;
+    padding: 0.3rem 0;
+    font-size: 1.75rem;
+}
+
+
+
+
+.previa-producto .previa p {
+    line-height: 1.2;
+    padding: .3rem 0 0 0;
+    font-size: 0.75rem;
+    color: black;
 }
 
 /*portfolio*/
@@ -247,12 +357,9 @@ text-align: center;
 .lista-trabajos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 10px;
+    grid-gap: 20px;
     margin-top: 50px;
-   /* display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 10px;
-    margin-top: 50px;*/
+ 
 }
 
 .trabajos {
@@ -262,14 +369,14 @@ text-align: center;
 }
 
 .trabajos img {
-    width: 90%;
+    width: 100%;
     border-radius: 15px;
     display: block;
-  /* transition: transform 0.10s;*/
+   
 }
 
 .leyenda {
-    width: 90%;
+    width: 100%;
     height: 0%;
     background: linear-gradient(rgb(255, 0, 0), rgba(255, 115, 0,0.9));
     border-radius: 15px;
@@ -307,10 +414,12 @@ text-align: center;
 
 .trabajos:hover {
     transform: scale(1.05);
+    transition: transform 0.10s;
 }
 .trabajos:hover .leyenda {
     height: 100%;
 }
+/*Contacto*/
 .btn{
     display: block;
     margin: 50px auto;
@@ -321,12 +430,12 @@ text-align: center;
     text-decoration: none;
     color: white;
     background-color: orange;
+    text-align: center;
 }
 .btn:hover{
     background-color: rgb(255, 115, 0);
 }
 
-/*Contacto*/
 .contacto-1{
     flex-basis: 35%;
 }
@@ -364,7 +473,7 @@ text-align: center;
     background:rgb(255, 115, 0);
 }
 
-.contacto-1 form{
+.contacto-2 form{
     width: 100%;
 }
 form input, form textarea{
@@ -384,6 +493,7 @@ form .btn2{
     margin-top: 20px;
     cursor: pointer;
 }
+/*Footer*/
 .copyright {
     width: 100%;
     text-align: center;
@@ -397,16 +507,88 @@ form .btn2{
 }
 
 /*Media queries*/
+
 nav .fas{
     display: none;
 }
-@media only screen and (max-width:600px){
-    header{
-        background-image: url('imagen/portfolio2.jpg');
+
+@media only screen and (max-width:900px){
+    .logo {
+        width: 60px;
+      
+    }
+
+    nav ul li a {
+            font-size: 14px;
+    
+    }
+    
+    .header-text {
+        margin-top: 40%;
+        font-size: 20px;
+    }
+    
+    .header-text h1 {
+        font-size: 40px;
 
     }
+    
+    /*acerca*/
+
+    .subtitulo{
+        font-size: 40px;
+    }
+    .acerca-col-1, .acerca-col-2{
+        flex-basis: 100%;
+    }
+    .acerca-col-1{
+        margin-bottom: 30px;
+    }
+    .acerca-col-2{
+        font-size: 14px;
+    }
+    /*Servicios*/
+    .previa-producto .previa h3 {
+        font-size: 1.7rem;
+    }
+
+
+    .previa-producto .previa p {
+        font-size: .7rem;
+
+    }
+
+    .previa-producto .previa img {
+        height: 11rem;
+        width: 20rem;
+    }
+
+    .previa-producto .previa {
+
+        width: 27rem;
+        height: 30rem;
+
+
+    }
+
+    .previa-producto .previa .fa-xmark {
+
+        top: 1rem;
+        right: 1.3rem;
+        font-size: 2rem;
+    }
+
+    /*Footer*/
+    .copyright {
+        padding: 25px ;
+        }
+    
+    
+}
+
+@media only screen and (max-width:728px){
     .header-text{
-        margin-top: 100%;
+        margin-top: 50%;
         font-size: 16px;
     }
     .header-text h1{
@@ -436,35 +618,93 @@ nav .fas{
         top: 25px;
         left: 25px;
     }
-    .subtitulo{
-        font-size: 40px;
-    }
-    .acerca-col-1, .acerca-col-2{
-        flex-basis: 100%;
-    }
-    .acerca-col-1{
-        margin-bottom: 30px;
-    }
-    .acerca-col-2{
-        font-size: 14px;
-    }
+   
+
+/*Acerca*/
     .solapa-links{
         font-size: 16px;
         margin-right: 20px;
     }
-    .trabajos img {
-        width: 100%;
-    }
+  
+  
+    /*Contacto*/
+
+.contacto-1{
+    flex-basis: 100%;
+    text-align: center;
+}
+.contacto-2{
+    flex-basis: 100%;
+}
+
+.btn.btn2{
+    display: inline-block;
+    background: orange;
+}
+.btn.btn2:hover{
+    background:rgb(255, 115, 0);
+}
+
+.contacto-1 form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 18px;
+    border-radius: 6px;
+    color: white;
+}
+form .btn2{
+    padding: 14px 100px;
     
-    .leyenda {
-        width: 100%;
+    width: 100%;
+    
+}
     }
-    .contacto-1,.contacto-2{
-        flex-basis: 100%;
-        text-align: center;
-    }
-    .subtitulo{
-        text-align: center;
+ 
+
+@media only screen and (max-width:576px){
+
+     .header-text{
+         margin-top: 60%;
+         font-size: 16px;
+     }
+     .header-text h1{
+         font-size: 30px;
+     }
+/*Servicios*/ 
+     .previa-producto .previa h3 {
+        font-size: 1.4rem;
     }
 
-}
+    .previa-producto .previa p {
+        font-size: .7rem;
+
+    }
+
+    .previa-producto .previa img {
+        height: 10rem;
+        width: 18rem;
+    }
+
+    .previa-producto .previa {
+
+        width: 25rem;
+        height: 31rem;
+
+
+    }
+
+    .previa-producto .previa .fa-xmark {
+
+        top: 1rem;
+        right: 1.3rem;
+        font-size: 1.5rem;
+    }
+    
+ }
